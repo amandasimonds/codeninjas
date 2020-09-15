@@ -1,0 +1,98 @@
+body{
+    margin:60px 80px;
+    text-align: center;
+}
+
+.canvas-container{
+    border: 1px solid blue;
+    text-align: center;
+    width: 400px;
+    margin: auto;
+}
+
+.circle-container{
+    width:400px;
+    height:400px;
+    background-color: lightblue;
+    position: relative;
+    margin: auto;
+}
+
+#circle{
+    background-color: blueviolet;
+    position: relative;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    animation: slide 5s infinite;
+}
+
+.main{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    animation: slideIn 3s infinite;
+}
+
+.bg-stars{
+    background-color: rgb(51, 7, 92);
+    position: relative;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+    animation: shoot 5s infinite;
+    float: left;
+}
+
+@keyframes moveDown{
+    0% {
+        transform: translateY(-10px)
+    }
+
+    50% {
+        transform: translateY(30px);
+    }
+
+    100%{
+        transform: translateY(-10);
+    }
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+
+    50%{
+        transform: translateY(200px) translateX(200px);
+    }
+
+    100%{
+        transform: translateX(0) translateY(0);
+    }
+}
+
+@keyframes shoot{
+
+}
+
+@keyframes slideIn{
+    0%{
+        transform: translateX(-1000px);
+    }
+
+    100%{
+        transform: translateX(0) translateY(0);
+    }
+}
+
+@keyframes shoot{
+
+}
+
+@media (max-width: 500px){
+
+
+}
